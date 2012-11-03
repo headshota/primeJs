@@ -1,8 +1,5 @@
-describe('test', function() {
-    it('Test prime existence', function () {
-        expect(prime).toBeDefined();
-    });
-
+describe('Iterating method tests', function() {
+    
     it('Test each', function() {
         var arr = [2, 3, 4];
         prime.each(arr, function (value, index) {

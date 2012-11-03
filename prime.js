@@ -18,6 +18,15 @@
                 resultArray.push(fn.call(array, array[i]));
             }
             return resultArray;
+        },
+        ltrim : function(str){
+            return str.replace(/^\s+/, '');
+        },
+        rtrim : function(str){
+            return str.replace(/\s+$/, '');
+        },
+        trim : function(str){
+            return this.rtrim(this.ltrim(str));
         }
     }
 
