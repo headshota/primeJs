@@ -10,6 +10,14 @@
             for(var i = 0; i < length; i++){
                 fn.call(array, array[i], i);
             }
+        },
+        map : function(array, fn) {
+            var length = array.length;
+            var resultArray = [];
+            for(var i = 0; i < length; i++){
+                resultArray.push(fn.call(array, array[i]));
+            }
+            return resultArray;
         }
     }
 

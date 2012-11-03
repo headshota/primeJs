@@ -20,4 +20,17 @@ describe('test', function() {
         });
     });
 
+    it('Test map', function() {
+        var arr = [2, 3, 4];
+        var newArr = prime.map(arr, function (val) { return ++val; });
+
+        expect(newArr[0]).toBe(3);
+        expect(newArr[1]).toBe(4);
+
+        var newArr = prime.map(arr, function (val) { return val * 3; });
+
+        expect(newArr[0]).toBe(6);
+        expect(newArr[1]).toBe(9);
+    });
+
 });
